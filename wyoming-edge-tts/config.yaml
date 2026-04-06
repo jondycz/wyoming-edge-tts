@@ -1,0 +1,41 @@
+name: wyoming-edge-tts
+version: 1.0.0
+slug: wyoming-edge-tts
+description: Run OpenAI Edge TTS together with Wyoming OpenAI for Home Assistant voice pipelines.
+startup: services
+boot: auto
+init: false
+arch:
+  - aarch64
+  - amd64
+discovery:
+  - wyoming
+ports:
+  10300/tcp: 10300
+  5050/tcp: null
+ports_description:
+  10300/tcp: Wyoming protocol endpoint
+  5050/tcp: Optional OpenAI-compatible Edge TTS API endpoint
+watchdog: tcp://[HOST]:[PORT:10300]
+options:
+  default_language: en-US
+  wyoming_languages: en
+  tts_voices: en-US-EmmaNeural en-US-ChristopherNeural
+  default_speed: 1.0
+  require_api_key: false
+  remove_filter: false
+  expand_api: false
+  tts_models: tts-1
+  tts_streaming_models: tts-1
+  wyoming_log_level: INFO
+schema:
+  default_language: str
+  wyoming_languages: str
+  tts_voices: str
+  default_speed: float(0.25,4.0)
+  require_api_key: bool
+  remove_filter: bool
+  expand_api: bool
+  tts_models: str
+  tts_streaming_models: str
+  wyoming_log_level: list(DEBUG|INFO|WARNING|ERROR|CRITICAL)

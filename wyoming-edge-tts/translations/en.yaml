@@ -1,0 +1,34 @@
+configuration:
+  default_language:
+    name: Default language locale
+    description: Locale used by the internal Edge TTS service when filtering voices.
+  wyoming_languages:
+    name: Wyoming languages
+    description: Space-separated language codes exposed to Home Assistant.
+  tts_voices:
+    name: TTS voices
+    description: Space-separated Edge TTS voice IDs exposed through Wyoming.
+  default_speed:
+    name: Default speed
+    description: Playback speed forwarded to both services.
+  require_api_key:
+    name: Require API key
+    description: Require a bearer token on the internal Edge TTS API.
+  remove_filter:
+    name: Remove text filter
+    description: Disable the text cleanup step before synthesis.
+  expand_api:
+    name: Expand API
+    description: Enable extra compatibility endpoints on the internal Edge TTS API.
+  tts_models:
+    name: TTS models
+    description: Space-separated OpenAI-compatible TTS models advertised by Wyoming.
+  tts_streaming_models:
+    name: Streaming TTS models
+    description: Space-separated models that use Wyoming incremental streaming.
+  wyoming_log_level:
+    name: Wyoming log level
+    description: Log verbosity for the Wyoming proxy.
+network:
+  10300/TCP: Wyoming protocol endpoint
+  5050/TCP: Optional OpenAI-compatible Edge TTS API endpoint
