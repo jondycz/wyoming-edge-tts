@@ -15,6 +15,8 @@ This repository packages work from these upstream projects:
 
 ## Adding this repository to Home Assistant
 
+[![Show add-on](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=72119c17_wyoming-edge-tts&repository_url=https%3A%2F%2Fgithub.com%2Fjondycz%2Fwyoming-edge-tts)
+
 1. Open Home Assistant.
 2. Go to **Settings** > **Apps**.
 3. Open the app store.
