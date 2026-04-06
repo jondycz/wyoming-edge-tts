@@ -67,7 +67,7 @@ en-US
 - The defaults use US English with Emma and Christopher voices.
 - `require_api_key` stays disabled by default because Wyoming talks to the internal Edge TTS endpoint without an API key.
 - Port `5050` is disabled by default on the host. Enable it only if you also want direct access to the OpenAI-compatible API.
-- This app pins `openai-edge-tts` to `v2.0.0` and `wyoming-openai` to `0.4.3` for more predictable builds.
+- This app pins `openai-edge-tts` to commit `edaed2afd2cdedcc4648380185d8d7cf7a1eee97` and `wyoming-openai` to `0.4.3` for predictable builds.
 
 ## Support
 

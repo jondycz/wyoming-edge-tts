@@ -3,7 +3,8 @@ FROM $BUILD_FROM
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-ARG OPENAI_EDGE_TTS_VERSION=v2.0.0
+# Pinned commit on main branch after v2.0.0 that includes ffmpeg conversion fixes.
+ARG OPENAI_EDGE_TTS_VERSION=edaed2afd2cdedcc4648380185d8d7cf7a1eee97
 ARG WYOMING_OPENAI_VERSION=0.4.3
 
 RUN apk add --no-cache \
