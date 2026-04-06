@@ -1,7 +1,8 @@
-name: wyoming-edge-tts
+name: Wyoming Edge TTS
 version: 1.0.0
 slug: wyoming-edge-tts
 description: Run OpenAI Edge TTS together with Wyoming OpenAI for Home Assistant voice pipelines.
+image: ghcr.io/jondycz/wyoming-edge-tts
 startup: services
 boot: auto
 init: false
