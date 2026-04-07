@@ -17,10 +17,6 @@ This repository packages work from these upstream projects:
 - `openai-edge-tts` by Travis van Nimwegen: https://github.com/travisvn/openai-edge-tts
 - `wyoming-openai` by Rory Eckel: https://github.com/roryeckel/wyoming_openai
 
-## Included app
-
-- `Wyoming Edge TTS`
-
 ## Adding this repository to Home Assistant
 
 [![Show add-on](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=72119c17_wyoming-edge-tts&repository_url=https%3A%2F%2Fgithub.com%2Fjondycz%2Fwyoming-edge-tts)
@@ -31,13 +27,4 @@ This repository packages work from these upstream projects:
 4. Add this repository as a custom repository.
 5. Install `Wyoming Edge TTS`.
 
-See `wyoming-edge-tts/DOCS.md` for configuration details.
-
-## Container publishing
-
-Images are published to GHCR using GitHub Actions:
-
-- Image: `ghcr.io/jondycz/wyoming-edge-tts`
-- Workflow: `.github/workflows/publish-ghcr.yml`
-
-On push to `main`, the workflow builds and publishes multi-arch images for `linux/amd64` and `linux/arm64`.
+See [wyoming-edge-tts/DOCS.md](wyoming-edge-tts/DOCS.md) for configuration details.
