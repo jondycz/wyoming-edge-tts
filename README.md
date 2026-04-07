@@ -2,6 +2,14 @@
 
 This repository contains a Home Assistant app for exposing Microsoft Edge TTS voices through Wyoming.
 
+## Streaming Support for Edge TTS
+
+Microsoft Edge TTS is excellent for voice quality, but Home Assistant voice pipelines work best with Wyoming-native streaming behavior.
+
+This add-on bridges that gap by combining OpenAI Edge TTS with Wyoming OpenAI, so Home Assistant gets responsive, streaming-capable TTS from Edge voices with lower perceived latency during playback.
+
+Note: As of today, the Home Assistant mobile app does not support streaming streaming TTS audio, so this app is primarily aimed at the Home Assistant Voice Preview Edition and other ESP based voice satellites.
+
 ## Credits
 
 This repository packages work from these upstream projects:
