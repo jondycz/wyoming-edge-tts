@@ -2,6 +2,18 @@
 
 This repository contains a Home Assistant app for exposing Microsoft Edge TTS voices through Wyoming.
 
+## Adding this repository to Home Assistant
+
+[![Show add-on](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=72119c17_wyoming-edge-tts&repository_url=https%3A%2F%2Fgithub.com%2Fjondycz%2Fwyoming-edge-tts)
+
+1. Open Home Assistant.
+2. Go to **Settings** > **Apps**.
+3. Open the app store.
+4. Add this repository as a custom repository.
+5. Install `Wyoming Edge TTS`.
+
+See [wyoming-edge-tts/DOCS.md](wyoming-edge-tts/DOCS.md) for configuration details.
+
 ## Streaming Support for Edge TTS
 
 Microsoft Edge TTS is excellent for voice quality, but Home Assistant voice pipelines work best with Wyoming-native streaming behavior.
@@ -16,15 +28,3 @@ This repository packages work from these upstream projects:
 
 - `openai-edge-tts` by Travis van Nimwegen: https://github.com/travisvn/openai-edge-tts
 - `wyoming-openai` by Rory Eckel: https://github.com/roryeckel/wyoming_openai
-
-## Adding this repository to Home Assistant
-
-[![Show add-on](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=72119c17_wyoming-edge-tts&repository_url=https%3A%2F%2Fgithub.com%2Fjondycz%2Fwyoming-edge-tts)
-
-1. Open Home Assistant.
-2. Go to **Settings** > **Apps**.
-3. Open the app store.
-4. Add this repository as a custom repository.
-5. Install `Wyoming Edge TTS`.
-
-See [wyoming-edge-tts/DOCS.md](wyoming-edge-tts/DOCS.md) for configuration details.
