@@ -8,7 +8,7 @@ Microsoft Edge TTS is excellent for voice quality, but Home Assistant voice pipe
 
 This add-on bridges that gap by combining OpenAI Edge TTS with Wyoming OpenAI, so Home Assistant gets responsive, streaming-capable TTS from Edge voices with lower perceived latency during playback.
 
-Note: As of today, the Home Assistant mobile app does not support streaming streaming TTS audio, so this app is primarily aimed at the Home Assistant Voice Preview Edition and other ESP based voice satellites.
+Note: As of today, the Home Assistant mobile app does not support streaming TTS audio, so this app is primarily aimed at the Home Assistant Voice Preview Edition and other ESP based voice satellites.
 
 ## Credits
 
